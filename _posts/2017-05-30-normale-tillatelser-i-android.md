@@ -52,3 +52,5 @@ USE_FINGERPRINT
 VIBRATE
 WAKE_LOCK
 WRITE_SYNC_SETTINGS
+
+https://growthbug.com/android-apps-do-not-need-your-permission-to-violate-your-privacy-a9f94bb497a0
