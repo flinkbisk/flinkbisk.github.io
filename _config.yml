@@ -1,3 +1,4 @@
 theme: minima
 title: Litt privatliv
 site.lang: nb
+markdown: kramdown
