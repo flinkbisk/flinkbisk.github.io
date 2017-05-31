@@ -52,38 +52,40 @@ Merk at jeg i hovedsak tar for meg situasjonen i nyeste versjon av Android (Noug
 : «Allows applications to write the sync settings.»
 
 
-## Informasjon og innvirkning på andre apper
+### Foruroligende (selv om alt har en nytteverdi i enkelttilfeller)
+
+[`REORDER_TASKS`](https://developer.android.com/reference/android/Manifest.permission.html#REORDER_TASKS)
+: «Allows an application to change the Z-order of tasks,» [dvs.](https://developer.android.com/guide/components/activities/tasks-and-back-stack.html) at appen kan plassere seg selv i forgrunnen, foran den appen som allerede er der.
+
 
 Alle apper kan se hvilke andre apper som er installert. Dette er ikke engang en tillatelse.
 
 [`GET_PACKAGE_SIZE`](https://developer.android.com/reference/android/Manifest.permission.html#GET_PACKAGE_SIZE)
 : «Allows an application to find out the space used by any package.»
+
+
 [`INSTALL_SHORTCUT`](https://developer.android.com/reference/android/Manifest.permission.html#INSTALL_SHORTCUT)
 : «Allows an application to install a shortcut in Launcher,» dvs. på det området en selv kan legge snarveier til apper.
 [~~`UNINSTALL_SHORTCUT`~~](https://developer.android.com/reference/android/Manifest.permission.html#UNINSTALL_SHORTCUT)
 : ~~«This permission is no longer supported.»~~
-[`KILL_BACKGROUND_PROCESSES`](https://developer.android.com/reference/android/Manifest.permission.html#KILL_BACKGROUND_PROCESSES)
-: «Allows an application to call [`killBackgroundProcesses(String)`](https://developer.android.com/reference/android/app/ActivityManager.html#killBackgroundProcesses(java.lang.String)),» der `String` er navnet på en app (pakke). «This is the same as the kernel killing those processes to reclaim memory; the system will take care of restarting these processes in the future as needed.»
-[`REORDER_TASKS`](https://developer.android.com/reference/android/Manifest.permission.html#REORDER_TASKS)
-: «Allows an application to change the Z-order of tasks,» [dvs.](https://developer.android.com/guide/components/activities/tasks-and-back-stack.html) at appen kan plassere seg selv i forgrunnen, foran den appen som allerede er der.
+
+
 [`REQUEST_DELETE_PACKAGES`](https://developer.android.com/reference/android/Manifest.permission.html#REQUEST_INSTALL_PACKAGES)
 : «Allows an application to request deleting packages.»
 [`REQUEST_INSTALL_PACKAGES`](https://developer.android.com/reference/android/Manifest.permission.html#REQUEST_INSTALL_PACKAGES)
 : «Allows an application to request installing packages.»
 
 
+### Først og fremst relevant for batteriforbruk
+
+[`KILL_BACKGROUND_PROCESSES`](https://developer.android.com/reference/android/Manifest.permission.html#KILL_BACKGROUND_PROCESSES)
+: «Allows an application to call [`killBackgroundProcesses(String)`](https://developer.android.com/reference/android/app/ActivityManager.html#killBackgroundProcesses(java.lang.String)),» der `String` er navnet på en app (pakke). «This is the same as the kernel killing those processes to reclaim memory; the system will take care of restarting these processes in the future as needed.»
 [`CHANGE_WIFI_MULTICAST_STATE`](https://developer.android.com/reference/android/Manifest.permission.html#CHANGE_WIFI_MULTICAST_STATE)
 : «Allows applications to enter Wi-Fi Multicast mode.» Lar appen slå på/av mottakelse av nettverkstrafikk som addresseres til flere enheter på en gang. Denne rettigheten har nok ingen betydning med tanke på personvern; det er heller snakk om batteribruk.
 [`REQUEST_IGNORE_BATTERY_OPTIMIZATIONS`](https://developer.android.com/reference/android/Manifest.permission.html#REQUEST_IGNORE_BATTERY_OPTIMIZATIONS)
 : Lar en app slippe å bli berørt av batterisparingstiltak.
 [`WAKE_LOCK`](https://developer.android.com/reference/android/Manifest.permission.html#WAKE_LOCK)
 : «Allows using PowerManager WakeLocks to keep processor from sleeping or screen from dimming.»
-
-
-[`MODIFY_AUDIO_SETTINGS`](https://developer.android.com/reference/android/Manifest.permission.html#MODIFY_AUDIO_SETTINGS)
-: «Allows an application to modify global audio settings.» Lar ikke appen starte opptak av lyd eller lignende.
-[`RECEIVE_BOOT_COMPLETED`](https://developer.android.com/reference/android/Manifest.permission.html#RECEIVE_BOOT_COMPLETED)
-: «Allows an application to receive the `ACTION_BOOT_COMPLETED` that is broadcast after the system finishes booting.»
 
 
 ## Trolig harmløst, men potensielt irriterende (og delvis unødvendig)
@@ -96,6 +98,10 @@ Alle apper kan se hvilke andre apper som er installert. Dette er ikke engang en 
 : «Allows an application to broadcast sticky intents. These are broadcasts whose data is held by the system after being finished, so that clients can quickly retrieve that data without having to wait for the next broadcast.» Dette høres skumlere ut enn det er. Det er snakk om at en opplysning en app sender til systemet (f.eks. batteristatus), beholdes i systemet slik at en annen app kan hente den uten at det første appen må sende den på nytt. Les mer [her](https://stackoverflow.com/questions/26038839/knowing-about-sticky-intent-in-android).
 [`EXPAND_STATUS_BAR`](https://developer.android.com/reference/android/Manifest.permission.html#EXPAND_STATUS_BAR)
 : «Allows an application to expand or collapse the status bar.» Det er det området øverst på skjermen der klokke, batteriindikator osv. vises. Denne tillatelsen gjelder (nok) bare når appen selv er i forgrunnen.
+[`MODIFY_AUDIO_SETTINGS`](https://developer.android.com/reference/android/Manifest.permission.html#MODIFY_AUDIO_SETTINGS)
+: «Allows an application to modify global audio settings.» Lar ikke appen starte opptak av lyd eller lignende.
+[`RECEIVE_BOOT_COMPLETED`](https://developer.android.com/reference/android/Manifest.permission.html#RECEIVE_BOOT_COMPLETED)
+: «Allows an application to receive the `ACTION_BOOT_COMPLETED` that is broadcast after the system finishes booting.»
 [`SET_ALARM`](https://developer.android.com/reference/android/Manifest.permission.html#SET_ALARM)
 : «Allows an application to broadcast an Intent to set an alarm for the user.» Appen kan be brukeren om å aktivere en alarm; den kan ikke aktivere en alarm selv.
 [`SET_TIME_ZONE`](https://developer.android.com/reference/android/Manifest.permission.html#SET_TIME_ZONE)
@@ -111,4 +117,5 @@ Alle apper kan se hvilke andre apper som er installert. Dette er ikke engang en 
 
 * * *
 
-Se også: [Android Apps do not need your permission to violate your privacy](https://growthbug.com/android-apps-do-not-need-your-permission-to-violate-your-privacy-a9f94bb497a0) om «some of the Normal Permissions and possible risk they may carry». Teksten omtaler også noen tillatelser som siden er blitt fjernet (men selvsagt fortsatt er å finne på de fleste Android-telefoner).
+Se også: [Android Apps do not need your permission to violate your privacy](https://growthbug.com/android-apps-do-not-need-your-permission-to-violate-your-privacy-a9f94bb497a0) om «some of the Normal Permissions and possible risk they may carry». Teksten omtaler også noen tillatelser som nå er blitt fjernet (men selvsagt fortsatt er å finne på de fleste Android-telefoner).
+
