@@ -1,4 +1,12 @@
 theme: minima
 title: Litt privatliv
-site.lang: nb
+site.lang: no
 markdown: kramdown
+twitter_username: litt_privatliv
+github_username:  littprivatliv
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+# http://alanwsmith.com/jekyll-liquid-date-formatting-examples
+minima:
+  date_format: "%d.%m.%Y"
