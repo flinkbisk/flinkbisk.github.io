@@ -3,15 +3,14 @@ layout: post
 title: "En oversikt over hva apper kan tillate seg i Android uten å spørre om lov"
 ---
 
-another term
 and another term
-: and a definition for the term
+:	and a definition for the term
 `and another term`
-: and a definition for the term
+:	and a definition for the term
 [and another term](#)
-: and a definition for the term
+:	and a definition for the term
 [`and another term`](#)
-: and a definition for the term
+:	and a definition for the term
 
 Mange kjenner til tillatelsene apper i Android enten gir seg selv (i eldre versjoner) eller spør om (i nyere versjoner), f.eks. tilgang til kameraet, til mikrofonen, til å ringe. På fagspråket kalles denne type tillatelser *farlige tillatelser.* I Androids dokumentasjon for utviklere [står det](https://developer.android.com/guide/topics/permissions/requesting.html#normal-dangerous):
 
