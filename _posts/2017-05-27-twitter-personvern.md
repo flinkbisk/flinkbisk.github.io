@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Twitters personvernerklæring"
-excerpt "Hva en gir samtykke til dersom en bruker Twitter.
+excerpt "Hva en gir samtykke til dersom en bruker Twitter."
 ---
 La oss ta en titt på [Twitters personvernerklæring («Privacy Policy»)](https://twitter.com/privacy) (av 18. juni 2017). Alle sitatene nedenfor stammer fra denne med mindre annet oppgis.
 
