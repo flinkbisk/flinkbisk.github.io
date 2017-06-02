@@ -5,7 +5,7 @@ excerpt: "En oversikt over tillatelser Android gir enhver app som ber om dem –
 ---
 Mange kjenner til tillatelsene apper i Android enten gir seg selv (i eldre versjoner) eller spør om (i nyere versjoner), for eksempel tilgang til kamera, til kontaktene, til å sende og motta tekstmeldinger. I Androids dokumentasjon kalles denne type tillatelser *farlige tillatelser:*
 
-> *Dangerous* permissions cover areas where the app wants data or resources that involve the user's private information, or could potentially affect the user's stored data or the operation of other apps. For example, the ability to read the user's contacts is a dangerous permission. If an app declares that it needs a dangerous permission, the user has to explicitly grant the permission to the app. [(kilde)](https://developer.android.com/guide/topics/permissions/requesting.html#normal-dangerous)
+> *Dangerous* permissions cover areas where the app wants data or resources that involve the user's private information, or could potentially affect the user's stored data or the operation of other apps. For example, the ability to read the user's contacts is a dangerous permission. If an app declares that it needs a dangerous permission, the user has to explicitly grant the permission to the app. ([kilde](https://developer.android.com/guide/topics/permissions/requesting.html#normal-dangerous))
 
 Dersom en tenker seg om, vil en innse at det også finnes en rekke ting apper kan gjøre uten noen slike tillatelser, for eksempel å bruke internett-tilkoblingen. Også disse tingene har et navn, nemlig *normale tillatelser:*
 
@@ -77,7 +77,7 @@ Alle apper kan se hvilke andre apper som er installert. Dette er ikke engang en 
 : «Allows an application to modify global audio settings.» Lar ikke appen starte opptak av lyd eller lignende.
 
 [`REORDER_TASKS`](https://developer.android.com/reference/android/Manifest.permission.html#REORDER_TASKS)
-: «Allows an application to change the Z-order of tasks,» det vil si at appen kan plassere seg selv i forgrunnen, foran den appen som allerede er der. [(kilde)](https://developer.android.com/guide/components/activities/tasks-and-back-stack.html)
+: «Allows an application to change the Z-order of tasks,» det vil si at appen kan plassere seg selv i forgrunnen, foran den appen som allerede er der. ([kilde](https://developer.android.com/guide/components/activities/tasks-and-back-stack.html))
 
 [`READ_SYNC_SETTINGS`](https://developer.android.com/reference/android/Manifest.permission.html#READ_SYNC_SETTINGS)
 : «Allows applications to read the sync settings.» Sammen med `WRITE_SYNC_SETTINGS` (nedenfor) lar denne tillatelsen appen sette opp synkronisering av egne data. Jeg vil anta at dette ikke gir appen mulighet til å endre eller lese av andre appers synkroniserings-prosesser (f.eks. av avtaler i kalenderen). Les mer [her](https://developer.android.com/training/sync-adapters/creating-sync-adapter.html).
