@@ -19,6 +19,7 @@ Merk at jeg i hovedsak tar for meg situasjonen i nyeste versjon av Android (Noug
 
 Se også: [Android Apps do not need your permission to violate your privacy](https://growthbug.com/android-apps-do-not-need-your-permission-to-violate-your-privacy-a9f94bb497a0) om «some of the Normal Permissions and possible risk they may carry». Teksten omtaler også noen tillatelser som nå er blitt fjernet (men selvsagt fortsatt er å finne på de fleste Android-telefoner).
 
+
 ## Farlig
 
 [`ACCESS_WIFI_STATE`](https://developer.android.com/reference/android/Manifest.permission.html#ACCESS_WIFI_STATE)
@@ -51,7 +52,7 @@ Se også: [Android Apps do not need your permission to violate your privacy](htt
 : «Allows using the device's IR transmitter, if available.»
 
 
-### Foruroligende (selv om alt har en nytteverdi i enkelttilfeller)
+## Foruroligende (selv om alt har en nytteverdi i enkelttilfeller)
 
 [`CHANGE_WIFI_MULTICAST_STATE`](https://developer.android.com/reference/android/Manifest.permission.html#CHANGE_WIFI_MULTICAST_STATE)
 : «Allows applications to enter Wi-Fi Multicast mode.» Lar appen slå på/av mottakelse av nettverkstrafikk som addresseres til flere enheter på en gang. Denne rettigheten har nok ingen betydning med tanke på personvern; det er heller snakk om batteribruk.
