@@ -5,10 +5,15 @@ email: "[github-brukernavn] krøllalfa posteo.net"
 site.lang: no
 markdown: kramdown
 twitter_username: littprivatliv
-github_username:  littprivatliv
+github_username: littprivatliv
+description: Personvern, sikkerhet, forbrukerrettigheter, lov og rett og sånt.
+
+plugins:
+  - jemoji
+  - jekyll-feed
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 # http://alanwsmith.com/jekyll-liquid-date-formatting-examples
 minima:
-date_format: "%d.%m.%Y"
+  date_format: "%d.%m.%Y"
