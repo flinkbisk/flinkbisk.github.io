@@ -1,5 +1,7 @@
 theme: minima
 title: Litt privatliv
+author: LP
+email: "[github-brukernavn] krøllalfa posteo.net"
 site.lang: no
 markdown: kramdown
 twitter_username: littprivatliv
