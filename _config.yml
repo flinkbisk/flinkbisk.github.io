@@ -5,8 +5,7 @@ email: [github-brukernavn] krøllalfa posteo.net
 markdown: kramdown
 twitter_username: littprivatliv
 github_username:  littprivatliv
-description: >
-  Personvern, sikkerhet, forbrukerrettigheter, log og rett og sånt.
+description: Personvern, sikkerhet, forbrukerrettigheter, lov og rett og sånt.
 
 plugins:
   - jemoji
