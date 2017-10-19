@@ -17,3 +17,7 @@ plugins:
 # http://alanwsmith.com/jekyll-liquid-date-formatting-examples
 minima:
   date_format: "%d.%m.%Y"
+
+# kramdown info: https://help.github.com/articles/updating-your-markdown-processor-to-kramdown/
+#   https://kramdown.gettalong.org/quickref.html
+# https://help.github.com/categories/customizing-github-pages/
