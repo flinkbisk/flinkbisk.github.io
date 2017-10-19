@@ -10,6 +10,7 @@ description: Personvern, sikkerhet, forbrukerrettigheter, lov og rett og sånt.
 plugins:
   - jemoji
   - jekyll-feed
+  - jekyll-sitemap
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
