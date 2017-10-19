@@ -2,6 +2,7 @@
 layout: post
 title: "En oversikt over hva apper kan tillate seg i Android uten å spørre om lov"
 excerpt: "En oversikt over tillatelser Android gir enhver app som ber om dem – uten at brukeren kan gjøre noe med det."
+last_modified_at: 2017-06-02
 ---
 Mange kjenner til tillatelsene apper i Android enten gir seg selv (i eldre versjoner) eller spør om (i nyere versjoner), for eksempel tilgang til kamera, til kontaktene, til å sende og motta tekstmeldinger. I Androids dokumentasjon kalles denne type tillatelser *farlige tillatelser:*
 
